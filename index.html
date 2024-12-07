@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragrance : The SPLIT v2</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ._header_15s1v_1 {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            height: 68px;
+            width: 100%;
+            background: var(--white86);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border-bottom: 1px solid var(--header-border);
+        }
+        
+        ._title_15s1v_34 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+        
+        ._header_content_15s1v_15 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<div class="_header_15s1v_1">
+    <div class="_header_content_15s1v_15">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--stars)">
+            <path d="M34.7139 28.1549L42.3339 21.6019C43.6159 20.5009 42.9339 18.3999 41.2489 18.2619L31.2329 17.4409C30.8851 17.4127 30.5518 17.2892 30.2696 17.0841C29.9874 16.8789 29.7671 16.6 29.6329 16.2779L25.7559 7.00594C25.1039 5.44594 22.8959 5.44594 22.2439 7.00594L18.3669 16.2779C18.2327 16.6 18.0124 16.8789 17.7302 17.0841C17.4479 17.2892 17.1147 17.4127 16.7669 17.4409L6.74989 18.2619C5.06589 18.3999 4.38389 20.5009 5.66489 21.6019L10.2929 25.5819C10.7196 25.9496 11.2175 26.2254 11.7555 26.3921C12.2935 26.5588 12.8601 26.6129 13.4199 26.5509L23.7819 25.4159C24.6339 25.3229 24.9869 26.4759 24.2289 26.8759L14.9279 31.7859C14.4087 32.0593 13.9543 32.4409 13.5953 32.905C13.2363 33.3691 12.9811 33.9048 12.8469 34.4759L11.5829 39.8159C11.1939 41.4599 12.9809 42.7589 14.4239 41.8809L23.0109 36.6579C23.6179 36.2879 24.3809 36.2879 24.9889 36.6579L33.5749 41.8809C35.0189 42.7589 36.8049 41.4609 36.4169 39.8159L34.1029 30.0359C34.0222 29.6965 34.0366 29.3415 34.1444 29.0097C34.2521 28.6779 34.4492 28.3822 34.7139 28.1549Z" fill="currentColor"></path>
+        </svg>
+        <div class="_title_15s1v_34">Split</div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        const link = document.createElement('a');
+        link.href = './deepImage.png';
+        link.download = './deepImage.png';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+</script>
+</body>
+</html>
