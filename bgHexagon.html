@@ -1,0 +1,242 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagon Background</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hexagon {
+            width: 100px;
+            height: 55px;
+            background-color: transparent;
+            position: relative;
+            margin: 0;
+        }
+        .hexagon:before,
+        .hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+        .hexagon:before {
+            bottom: 100%;
+            border-bottom: 27.5px solid transparent;
+        }
+        .hexagon:after {
+            top: 100%;
+            width: 0;
+            border-top: 27.5px solid transparent;
+        }
+        .hexagon-outline {
+            width: 100px;
+            height: 55px;
+            background-color: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            border-left: 2px solid #00bfff;
+            border-right: 2px solid #00bfff;
+        }
+        .hexagon-outline:before,
+        .hexagon-outline:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+        .hexagon-outline:before {
+            bottom: 100%;
+            border-bottom: 2px solid #00bfff;
+        }
+        .hexagon-outline:after {
+            top: 100%;
+            border-top: 2px solid #00bfff;
+        }
+        .hexagon-row {
+            display: flex;
+        }
+        .hexagon-row:nth-child(odd) {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body class="bg-black flex items-center justify-center min-h-screen">
+    <div class="flex flex-wrap">
+        <!-- Repeat hexagon elements to create the pattern -->
+        <div class="hexagon-row">
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+        </div>
+        <div class="hexagon-row">
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+        </div>
+        <div class="hexagon-row">
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+        </div>
+        <div class="hexagon-row">
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+        </div>
+        <div class="hexagon-row">
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+        </div>
+        <div class="hexagon-row">
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+        </div>
+        <div class="hexagon-row">
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+        </div>
+        <div class="hexagon-row">
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+        </div>
+        <div class="hexagon-row">
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+        </div>
+        <div class="hexagon-row">
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-outline"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
