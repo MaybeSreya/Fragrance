@@ -1,0 +1,83 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+  <title>
+   Google Search Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://registry.npmmirror.com/vue/3.3.11/files/dist/vue.global.js">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+    .mdi--bell-notification::after {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      vertical-align: -0.125em;
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M21 6.5c0 1.93-1.57 3.5-3.5 3.5S14 8.43 14 6.5S15.57 3 17.5 3S21 4.57 21 6.5m-2 5.29c-.5.13-1 .21-1.5.21A5.51 5.51 0 0 1 12 6.5c0-1.47.58-2.8 1.5-3.79A1.93 1.93 0 0 0 12 2c-1.1 0-2 .9-2 2v.29C7.03 5.17 5 7.9 5 11v6l-2 2v1h18v-1l-2-2zM12 23c1.11 0 2-.89 2-2h-4a2 2 0 0 0 2 2'/%3E%3C/svg%3E");
+    }
+    .logos--google-bard-icon::after {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      vertical-align: -0.125em;
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 258'%3E%3Cdefs%3E%3CradialGradient id='logosGoogleBardIcon0' cx='78.302%25' cy='55.52%25' r='78.115%25' fx='78.302%25' fy='55.52%25' gradientTransform='scale(.99947 1)rotate(78.858 .783 .555)'%3E%3Cstop offset='0%25' stop-color='%231ba1e3'/%3E%3Cstop offset='.01%25' stop-color='%231ba1e3'/%3E%3Cstop offset='30.022%25' stop-color='%235489d6'/%3E%3Cstop offset='54.552%25' stop-color='%239b72cb'/%3E%3Cstop offset='82.537%25' stop-color='%23d96570'/%3E%3Cstop offset='100%25' stop-color='%23f49c46'/%3E%3C/radialGradient%3E%3CradialGradient id='logosGoogleBardIcon1' cx='-3.409%25' cy='-54.219%25' r='169.363%25' fx='-3.409%25' fy='-54.219%25' gradientTransform='matrix(.19314 .98115 -.98062 .19324 -.559 -.404)'%3E%3Cstop offset='0%25' stop-color='%231ba1e3'/%3E%3Cstop offset='.01%25' stop-color='%231ba1e3'/%3E%3Cstop offset='30.022%25' stop-color='%235489d6'/%3E%3Cstop offset='54.552%25' stop-color='%239b72cb'/%3E%3Cstop offset='82.537%25' stop-color='%23d96570'/%3E%3Cstop offset='100%25' stop-color='%23f49c46'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cpath fill='url(%23logosGoogleBardIcon0)' d='m122.062 172.77l-10.27 23.52c-3.947 9.042-16.459 9.042-20.406 0l-10.27-23.52c-9.14-20.933-25.59-37.595-46.108-46.703L6.74 113.52c-8.987-3.99-8.987-17.064 0-21.053l27.385-12.156C55.172 70.97 71.917 53.69 80.9 32.043L91.303 6.977c3.86-9.303 16.712-9.303 20.573 0l10.403 25.066c8.983 21.646 25.728 38.926 46.775 48.268l27.384 12.156c8.987 3.99 8.987 17.063 0 21.053l-28.267 12.547c-20.52 9.108-36.97 25.77-46.109 46.703'/%3E%3Cpath fill='url(%23logosGoogleBardIcon1)' d='m217.5 246.937l-2.888 6.62c-2.114 4.845-8.824 4.845-10.937 0l-2.889-6.62c-5.148-11.803-14.42-21.2-25.992-26.34l-8.898-3.954c-4.811-2.137-4.811-9.131 0-11.269l8.4-3.733c11.87-5.273 21.308-15.017 26.368-27.22l2.966-7.154c2.067-4.985 8.96-4.985 11.027 0l2.966 7.153c5.06 12.204 14.499 21.948 26.368 27.221l8.4 3.733c4.812 2.138 4.812 9.132 0 11.27l-8.898 3.953c-11.571 5.14-20.844 14.537-25.992 26.34'/%3E%3C/svg%3E");
+    }
+  </style>
+ </head>
+ <body>
+  <div class="p-4 mt-8" id="app">
+   <div class="flex justify-between items-center mb-4">
+    <div class="text-4xl font-bold ml-12 flex items-center">
+     Google
+     <span class="logos--google-bard-icon ml-2"></span>
+    </div>
+    <div class="flex items-center space-x-4">
+     <span class="mdi--bell-notification"></span>
+     <img alt="User profile picture" class="rounded-full" height="30" src="https://storage.googleapis.com/a1aa/image/f6cqPMHNn5ykEyEfaarEiAC2fbYznXYJYezi0vd8JmIeyNMfE.jpg" width="30"/>
+    </div>
+   </div>
+   <div class="relative mb-4">
+    <input class="w-full p-5 pl-12 rounded-full bg-gray-800 text-gray-300 focus:outline-none" placeholder="Search" type="text"/>
+    <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+    </i>
+    <div class="absolute right-4 top-1/2 transform -translate-y-1/2 flex space-x-4">
+     <i class="fas fa-microphone text-blue-500">
+     </i>
+     <i class="fas fa-camera text-blue-500">
+     </i>
+    </div>
+   </div>
+   <div class="flex justify-center space-x-2 mb-4">
+    <div class="bg-yellow-700 p-2 rounded-full">
+     <i class="fas fa-image text-white">
+     </i>
+    </div>
+    <div class="bg-blue-900 p-2 rounded-full">
+     <i class="fas fa-language text-white">
+     </i>
+    </div>
+    <div class="bg-green-700 p-2 rounded-full">
+     <i class="fas fa-graduation-cap text-white">
+     </i>
+    </div>
+    <div class="bg-red-700 p-2 rounded-full">
+     <i class="fas fa-music text-white">
+     </i>
+    </div>
+   </div>
+  </div>
+  <script>
+   const { createApp } = Vue;
+    createApp({}).mount('#app');
+  </script>
+ </body>
+</html>
